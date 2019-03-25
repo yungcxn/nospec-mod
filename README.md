@@ -1,4 +1,4 @@
-# nospec-mod
+# NoSpec-Mod
 Minecraft Forge Mod at Version 1.8.9 for CWBW.
 
 ## CWBW
