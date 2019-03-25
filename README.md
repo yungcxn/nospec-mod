@@ -35,5 +35,6 @@ It opens a GUI, where you can toggle the modules off, which you don't want to de
 ### Future Changes
 At the moment, the Mod is only available in German, because the server and it's community is German, but I'll translate it into English...
 - [ ] Finished translation
+
 And maybe add other features into the *"OTHER"* content-section...
 - [ ] add more features
