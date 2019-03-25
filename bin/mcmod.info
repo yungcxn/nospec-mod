@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nospec",
+  "name": "noSpec",
+  "description": "Mod which detects items and helps you in CWBW.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["cxn"],
+  "credits": "cxn",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
