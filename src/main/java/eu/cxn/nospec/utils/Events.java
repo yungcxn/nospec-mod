@@ -3,6 +3,7 @@ package eu.cxn.nospec.utils;
 import java.util.Collection;
 
 import eu.cxn.nospec.NoSpec;
+import eu.cxn.nospec.elo.EloCalculator;
 import eu.cxn.nospec.gui.MainGui;
 import eu.cxn.nospec.setting.Settings;
 import net.minecraft.client.Minecraft;
@@ -15,6 +16,7 @@ import net.minecraft.init.Items;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -51,6 +53,8 @@ public class Events
   private ArrayList<EntityPlayer> tnt = new ArrayList();
   private ArrayList<EntityPlayer> ironpick = new ArrayList();
   private ArrayList<EntityPlayer> playerPos = new ArrayList();
+  
+  //ProjectileHitEvent.getEntity()
   
   @SubscribeEvent
   public void onRender(RenderGameOverlayEvent e)
@@ -228,6 +232,8 @@ public class Events
       MainGui.showMainGui = false;
     }
   }
+  
+  
   
   /*
    * 

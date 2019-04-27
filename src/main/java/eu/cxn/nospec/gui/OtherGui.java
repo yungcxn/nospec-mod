@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.lwjgl.input.Keyboard;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -18,13 +19,7 @@ public class OtherGui extends GuiScreen{
 		
 		Keyboard.enableRepeatEvents(true);
 		
-		
-		buttonList.clear();
-		
-		GuiButton HeartsButton = new GuiButton(1, width, height, 100, 20, "Hearts");
-		
-		buttonList.add(HeartsButton);
-		}
+	}
 	
 	@Override
 	public void updateScreen() {
@@ -41,7 +36,8 @@ public class OtherGui extends GuiScreen{
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		drawDefaultBackground();
 		fontRendererObj.drawString("NoSpec v.2", width / 2 - 28, height / 2 - 70, 16777215);
-		fontRendererObj.drawString("Coming Soon", width / 2 - 30, height / 2 - 10, 16777215);
+		fontRendererObj.drawString("/elo fuer Elo-Anzeigen im CW", width / 2 - Minecraft.getMinecraft().fontRendererObj.getStringWidth("/elo fuer Elo-Anzeigen im CW") / 2, height / 2, 16777215);
+		
 		fontRendererObj.drawString("by cxn.", 1, 1, 16777215);
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}

@@ -5,6 +5,7 @@ import eu.cxn.nospec.gui.MainGui;
 import eu.cxn.nospec.gui.OtherGui;
 import eu.cxn.nospec.proxies.CommonProxy;
 import eu.cxn.nospec.setting.Settings;
+import eu.cxn.nospec.utils.EloCommand;
 import eu.cxn.nospec.utils.Events;
 import eu.cxn.nospec.utils.NoSpecCommand;
 import net.minecraft.init.Blocks;
@@ -72,6 +73,7 @@ public class NoSpec
     	Settings.loadSetting();
     	MinecraftForge.EVENT_BUS.register(new Events());
     	ClientCommandHandler.instance.registerCommand(new NoSpecCommand());
+    	ClientCommandHandler.instance.registerCommand(new EloCommand());
     	FMLCommonHandler.instance().bus().register(this);
     	System.out.println("DEBUG-MODE: " + isDebug);
     	System.out.println("ECLIPSE-MODE: " + isEclipse);
